@@ -1,15 +1,17 @@
-/*body {
-	border: 1px solid red;
-}*/
-
-/*nav*/
+/***** 00.Basic *****/
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/***** 01.nav *****/
+.navbar-top {
+	background-color: #000;
+}
 nav .navbar-brand {
 	padding-top: 20px;
 }
-nav .navbar-nav .nav-item {
-	margin-left: 10px;
-}
-nav .navbar-nav .nav-item .nav-link {
+nav .collapse ul li .nav-link {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 600;
@@ -18,31 +20,35 @@ nav .navbar-nav .nav-item .nav-link {
 nav .navbar-nav .nav-item .nav-link:hover {
 	border-bottom: 3px solid #fff;
 }
-
-/*jumbotron*/
+nav .collapse ul li {
+	margin-right: 10px;
+}
+/***** 02.jumbotron *****/
 .jumbotron {
 	background-image: url(https://www.aussiespecialist.com/content/asp/zh_hk/sales-resources/fact-sheets-overview/great-golf-courses/jcr:content/mainParsys/itineraryday_0/heroImage.img.jpg);
 	background-size: cover;
-  background-repeat:no-repeat;
+	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position: center;
+	margin-bottom: 0;
+	width: 100%;
 	height: 770px;
-	opacity: 0.8;
+	text-align: center;
+	color: #fff;
 }
 .jumbotron .container {
-	color: #fff;
-	text-align: center;
 	position: relative;
-	top: 50%;
-  transform:translateY(-50%);
+	top: 40%;
+	margin: 0 auto;
+	transform: translateY(- 50%);
 }
-
 .jumbotron .container h1 {
 	font-weight: bold;
+	letter-spacing: 2px;
 }
 .jumbotron .container p {
+	margin-top: 10px;
 	font-size: 26px;
-	font-weight: 500;
 }
 .jumbotron .container button {
 	padding: 15px 45px;
@@ -69,4 +75,289 @@ nav .navbar-nav .nav-item .nav-link:hover {
 .jumbotron .container .button2:hover {
 	background-color: #16982B;
 	border: 3px solid #16982B;
+}
+
+/***** 03.6 icon *****/
+#section_icon {
+	text-align: center;
+	height: 300px;
+	background-color: #404040;
+}
+#section_icon .container-fluid {
+	position: relative;
+	top: 20%;
+	margin: 0 auto;
+	transform: translateY(- 50%);
+}
+#section_icon .container-fluid .row .col-2 a {
+	text-decoration: none;
+	border-bottom: 5px solid transparent;
+	padding-bottom: 127px;
+}
+#section_icon .container-fluid .row .col-2 a:hover {
+	border-bottom: 5px solid #F4A460;
+}
+#section_icon .container-fluid .row .col-2 a i{
+	font-size: 120px;
+	color: #F4A460;
+}
+#section_icon .container-fluid .row .col-2 a p {
+	color: #fff;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+/***** 04.Why Choose Our Club *****/
+#section_choose .container .row .col-10 {
+	text-align: center;
+	margin-top: 80px;
+}
+#section_choose .container .row .col-10 .choose_bgc {
+	background-color: #F5F5F5;
+}
+#section_choose .container .row .col-10 h2 {
+	font-weight: bold;
+}
+#section_choose .container .row .col-10 p {
+	color: #808080;
+}
+#section_choose .container .row .col-12 .col-6 {
+	margin-top: -50px;
+}
+#section_choose .container .row .col-12 .col-6 .col-10 h4 {
+	margin-top: 15px;
+	color: #228B22;
+	cursor: pointer;
+}
+#section_choose .container .row .col-12 .col-6 .col-10 hr {
+	border-bottom: 0px;
+	width: 50px;
+	border: 4px solid #8B4513;
+	border-radius: 5px;
+}
+#section_choose .container .row .col-12 .col-6 .col-10 p {
+	padding: 10px;
+}
+#section_choose .container .row .col-12 .button3 {
+	text-align: center;
+	margin-top: 20px;
+}
+#section_choose .container .row .col-12 .button3 button {
+	padding: 15px 45px;
+	font-size: 20px;
+	background-color: #228B22;
+	border: 3px solid #228B22;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+#section_choose .container .row .col-12 .button3 button:hover {
+	background-color: #fff;
+	color: #228B22;
+}
+
+/***** 05.mid_bg *****/
+#section_mid_bg {
+	margin-top: 60px;
+	background-image: url(http://www.fuji-gc.com/chinese/img/main01.jpg);
+	height: 500px;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed;
+}
+#section_mid_bg .container {
+	text-align: center;
+	padding-right: 250px;
+	padding-left: 250px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#section_mid_bg .container h1 {
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #8B4513;
+}
+#section_mid_bg .container p {
+	font-size: 20px;
+	color: #fff;
+}
+#section_mid_bg .container button {
+	margin-top: 15px;
+	padding: 15px 55px;
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 1px;
+	transition: 0.5s
+}
+#section_mid_bg .container button:hover {
+	color: #fff;
+	background-color: #228B22;
+	border: 1px solid #228B22;
+}
+
+/***** 06.Testimonials *****/
+#section_testimonials {
+	margin-top: 70px;
+	text-align: center;
+}
+#section_testimonials .container .row .col-12 {
+	margin-bottom: 40px;
+}
+#section_testimonials .container .row .col-4 .txt {
+	float: right;
+	margin-right: 80px;
+}
+#section_testimonials .container .row .col-4 .txt h5 {
+	font-size: 16px;
+	color: #228B22;
+}
+#section_testimonials .container .row .col-4 .txt p {
+	color: #808080;
+	font-style: italic;	
+}
+#section_testimonials .container .row .col-12 {
+	margin-top: 50px;
+}
+#section_testimonials .container .row .col-12 button {
+	padding: 20px 50px;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: 500;
+	color: #fff;
+	background-color: #228B22;
+	border: 3px solid #228B22;
+	border-radius: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+#section_testimonials .container .row .col-12 button:hover {
+	background-color: #fff;
+	color: #228B22;
+}
+
+/***** 07.Latest *****/
+#section_latest {
+	background-color: #DCDCDC;
+}
+#section_latest .container .row .col-12 h1 {
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+#section_latest .container .row .col-6 img{
+	width: 100%;
+}
+#section_latest .container .row .col-6 .card .card-img-overlay {
+	padding-top: 300px;
+}
+#section_latest .container .row .col-6 .card button {
+	background-color: #B87333;
+	color: #fff;
+	padding: 3px 18px;
+	border-radius: 10px;
+	border: none;
+}
+#section_latest .container .row .col-6 .card h5 {
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: 30px;
+}
+#section_latest .container .row .col-12 {
+	text-align: center;
+}
+#section_latest .container .row .col-12 button {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 15px 50px;
+	letter-spacing: 1px;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: #228B22;
+	color: #fff;
+	border: 3px solid #228B22;
+	font-weight: bold;
+	transition: 0.5s;
+}
+#section_latest .container .row .col-12 button:hover {
+	background-color: #fff;
+	color: #228B22;
+}
+
+/***** 08.Team *****/
+#section_team .container .row {
+	margin-bottom: 50px;
+}
+#section_team .container .row .col-12 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+#section_team .container .row .col-12 h1 {
+	font-weight: bold;
+}
+
+#section_team .container .row .col-6 .col-4 button {
+	margin-top: 10px;
+	width: 100%;
+	font-size: 26px;
+	background-color: #228B22;
+	border: 2px solid #228B22;
+	border: none;
+	border-radius: 10px;
+	transition: 0.5s;
+	color: #fff;
+}
+#section_team .container .row .col-6 .col-4 button:hover {
+	cursor: pointer;
+	background-color: #fff;
+	border: 2px solid #228B22;
+	color: #228B22;
+}
+#section_team .container .row .col-6 .col-8 h5 {
+	color: #228B22;
+}
+#section_team .container .row .col-6 .col-8 h6 {
+	color: #DCDCDC;
+}
+#section_team .container .row .col-6 .col-8 p {
+	color: #808080;
+	margin-top: 20px;
+}
+
+/***** 09.Footer *****/
+#contact {
+	background-color: #404040;
+	height: 400px;
+	color: #fff;
+}
+#contact .container .row-out {
+	padding-top: 70px;
+	/*padding-bottom: 70px;*/
+}
+#contact .container .row-out .col-4 hr {
+	background-color: #228B22;
+}
+#contact .container .row-out .col-4 .col-1 i {
+	color: #B87333;
+	font-size: 20px;
+}
+#contact .container .row-out .col-4 .col-11 p {
+	color: #DCDCDC;
+}
+#contact .container .row-out .col-4 .col-11 .p1 {
+	color: #B87333;
+}
+#contact .container .row-out .col-4 .form-inline button {
+	background-color: #fff;
+	color: #000;
+	border: none;
+}
+#contact .container .row-out .col-4 .form-inline button:hover {
+	background-color: #228B22;
+	color: #fff;
 }
