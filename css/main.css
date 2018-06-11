@@ -1,0 +1,72 @@
+/*body {
+	border: 1px solid red;
+}*/
+
+/*nav*/
+nav .navbar-brand {
+	padding-top: 20px;
+}
+nav .navbar-nav .nav-item {
+	margin-left: 10px;
+}
+nav .navbar-nav .nav-item .nav-link {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	border-bottom: 3px solid transparent;
+}
+nav .navbar-nav .nav-item .nav-link:hover {
+	border-bottom: 3px solid #fff;
+}
+
+/*jumbotron*/
+.jumbotron {
+	background-image: url(https://www.aussiespecialist.com/content/asp/zh_hk/sales-resources/fact-sheets-overview/great-golf-courses/jcr:content/mainParsys/itineraryday_0/heroImage.img.jpg);
+	background-size: cover;
+  background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+	height: 770px;
+	opacity: 0.8;
+}
+.jumbotron .container {
+	color: #fff;
+	text-align: center;
+	position: relative;
+	top: 50%;
+  transform:translateY(-50%);
+}
+
+.jumbotron .container h1 {
+	font-weight: bold;
+}
+.jumbotron .container p {
+	font-size: 26px;
+	font-weight: 500;
+}
+.jumbotron .container button {
+	padding: 15px 45px;
+	font-weight: 600;
+	border-radius: 10px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	border: 3px solid #fff;
+}
+.jumbotron .container .button1 {
+	margin-right: 20px;
+	transition: 0.5s;
+}
+.jumbotron .container .button1:hover {
+	background-color: #16982B;
+	color: #fff;
+	border: 3px solid #16982B;
+}
+.jumbotron .container .button2 {
+	background-color: transparent;
+	color: #fff;
+	transition: 0.5s;
+}
+.jumbotron .container .button2:hover {
+	background-color: #16982B;
+	border: 3px solid #16982B;
+}
